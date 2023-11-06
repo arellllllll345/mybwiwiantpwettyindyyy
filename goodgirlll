@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+
+struct student{
+    char name[50];
+    char NRP[15];
+    int age;
+    char grades[9];
+};
+
+//OR WRITE IT LIKE THIS
+// typedef struct{
+//     char name[50];
+//     char NRP[15];
+//     int age;
+//     int grades[9];
+// } student;
+
+void printfStudent(struct student s){
+    printf("Name: %s\n", s.name);
+    printf("NRP: %s\n", s.NRP);
+    printf("Age: %d\n", s.age);
+    printf("Dasar Pemrograman: %c\nKalkulus: %c\nSistem Digital: %c\nSistem Basis Data: %c\nAljabar Linear: %c\n", s.grades[0], s.grades[1], s.grades[2], s.grades[3], s.grades[4]);
+    printf("(∩˃o˂∩)♡𓍢ִ໋🌷͙֒ i lub lub lub indyyy so mwah only indyyy!!! u did really great sayangg!!! <3\n");
+}
+
+int main(void){
+    struct student indyy;
+    strcpy(indyy.name, "indyy");
+    strcpy(indyy.NRP, "5025231007");
+   indyy.age = 18;
+
+    for(int i = 0; i < 9; i++){
+        indyy.grades[i] = 'A';
+    }
+
+    printfStudent(indyy);
+}
